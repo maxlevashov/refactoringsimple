@@ -44,7 +44,18 @@ class TennisGame
                 }
                 switch ($tempScore)
                 {
-
+                     case 0;
+                        $this->score .= 'Love';
+                        break;
+                    case 1;
+                        $this->score .= 'Fifteen';
+                        break;
+                    case 2;
+                        $this->score .= 'Thirty';
+                        break;
+                    case 3;
+                        $this->score .= 'Forty';
+                        break;
                 }
             }
         }
