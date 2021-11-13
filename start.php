@@ -44,7 +44,7 @@ class TennisGame
                 }
                 switch ($tempScore)
                 {
-                     case 0;
+                    case 0;
                         $this->score .= 'Love';
                         break;
                     case 1;
@@ -60,4 +60,14 @@ class TennisGame
             }
         }
     }
+    
+    public function __toString()
+    {
+        return $this->score;
+    }
 }
+
+
+$tennisGame = new TennisGame();
+$tennisGame->getScore('player1', 'player2', 2, 3);
+echo $tennisGame;
